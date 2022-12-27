@@ -1,7 +1,6 @@
-import React from "react";
-import img1 from './images/Blends.png'
+import img1 from './images/Blend.png'
 
-export default function Ourblends() {
+function Ourblends() {
   return (
     <div>
       <h3>Our Blends</h3>
@@ -16,3 +15,5 @@ export default function Ourblends() {
     </div>
   );
 }
+
+export default Ourblends;

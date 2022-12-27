@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "./images/hero.png";
+import img1 from "./images/Hero.png";
 
 function Hero() {
   return (
     <div>
-      <img src={img1} alt=''/>
+      <img src={img1} alt="" />
     </div>
   );
 }

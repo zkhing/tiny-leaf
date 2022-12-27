@@ -1,7 +1,7 @@
 import React from 'react'
 import img1 from './images/Img 1.png'
 
-export default function Gallery() {
+function Gallery() {
   return (
     <div>
       <h2>Gallery</h2>
@@ -9,3 +9,5 @@ export default function Gallery() {
     </div>
   );
 }
+
+export default Gallery;

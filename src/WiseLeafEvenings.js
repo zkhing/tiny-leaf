@@ -1,8 +1,8 @@
-import React from 'react'
-import img1 from "./images/WiseLeaf1.png";
-import img2 from "./images/WiseLeaf2.png";
+import React from "react";
+import img1 from "./images/Wiseleaf1.png";
+import img2 from "./images/Wiseleaf2.png";
 
-export default function WiseLeafEvenings() {
+function WiseLeafEvenings() {
   return (
     <div>
       <img src={img1} alt="" />
@@ -16,3 +16,5 @@ export default function WiseLeafEvenings() {
     </div>
   );
 }
+
+export default  WiseLeafEvenings;

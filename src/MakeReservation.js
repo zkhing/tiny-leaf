@@ -1,10 +1,12 @@
-import React from 'react'
-import image from './images/Background-1.png'
+import React from "react";
+import image from "./images/Background.png";
 
-export default function MakeReservation() {
+function MakeReservation() {
   return (
     <div>
-        <img src={image} alt=''/>
+      <img src={image} alt="" />
     </div>
-  )
+  );
 }
+
+export default MakeReservation;
