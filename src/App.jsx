@@ -12,19 +12,33 @@ import WiseLeafEvenings from "./WiseLeafEvenings";
 function App() {
   return (
     <div className="App">
-      <Header />
+      <header>
+        <Header />
+      </header>
 
        <main>
-
-         <Hero />
-         <Ourblends />
-         <WiseLeafEvenings />
-         <MakeReservation />
-         <Gallery />
+        
+        <section>
+          <Hero />
+        </section>
+        <section>
+          <Ourblends />
+        </section>
+        <section>
+          <WiseLeafEvenings />
+        </section>
+        <section>
+          <MakeReservation />
+        </section>
+        <section>
+          <Gallery />
+        </section>
 
        </main>
 
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
