@@ -2,7 +2,7 @@ import img1 from './images/Blend.png'
 
 function Ourblends() {
   return (
-    <div>
+    <div className='blends-container'>
       <h3>Our Blends</h3>
       <p className='blend-txt'>
         We make our very own Tiny Leaf blends right here in the tea house,

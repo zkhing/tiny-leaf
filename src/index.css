@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap'); 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-h1 {
+h1, h3{
   font-family: 'Cormorant', serif;
 }
 
@@ -10,6 +10,7 @@ p {
   font-family: "Roboto";
 }
 
+/* header section and nav bar start here  */
 .header-wrapper {
   background-color: var(--colour-sage);
   color: var(--colour-white);
@@ -17,20 +18,36 @@ p {
   justify-content: space-around;
 }
 
-.hamburgerMenu{
+.navbar{
+  display: flex;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 20px;
+}
+
+li{
+  padding: 10px;
+}
+/* .hamburgerMenu{
   width: 40px;
   height: 40px;
   margin-top: 20px;
-}
+} */
 
+/* hero section here  */
 .heroImg{
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
+/* about section starts here  */
 .blend-txt{
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .hand-picked-txt{
@@ -38,11 +55,18 @@ p {
   font-size: 50px;
 }
 
+/* wise-leaf section starts here*/
 .wiseLeafInfo{
   background-color: var(--colour-sage);
-  padding: 10px;
+  padding: 30px;
+  margin: 10px;
 }
 
+.wiseLeaf-img2{
+  margin: 10px;
+}
+
+ /* reservation section starts here */
 .reservationImg{
   width: 100%;
   height: auto;
@@ -75,11 +99,22 @@ p {
   left: 180px;
 }
 
+/* gallery section starts here  */
+.gallery-img{
+  margin: 20px;
+}
+
+/* footer section starts here */
 .footer-container{
   background-color: var(--colour-sage);
-  color: white;
+  color: var(--colour-white);
+  padding: 20px;
 }
 
 .footer-logo{
   padding-top: 20px;
+}
+
+.footer-info{
+  text-align: left;
 }

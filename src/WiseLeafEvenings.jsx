@@ -4,7 +4,7 @@ import img2 from "./images/Wiseleaf2.png";
 
 function WiseLeafEvenings() {
   return (
-    <div className="wiseLeafEvening-container">
+    <div className="wiseLeaf-container">
       <img src={img1} alt="" />
 
       <div className="wiseLeafInfo">
@@ -16,7 +16,7 @@ function WiseLeafEvenings() {
       </p>
       </div>
 
-      <img src={img2} alt="" />
+      <img className="wiseLeaf-img2" src={img2} alt="" />
     </div>
   );
 }

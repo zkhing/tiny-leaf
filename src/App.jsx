@@ -17,23 +17,11 @@ function App() {
       </header>
 
        <main>
-        
-        <section>
           <Hero />
-        </section>
-        <section>
           <Ourblends />
-        </section>
-        <section>
           <WiseLeafEvenings />
-        </section>
-        <section>
           <MakeReservation />
-        </section>
-        <section>
           <Gallery />
-        </section>
-
        </main>
 
       <footer>

@@ -1,11 +1,14 @@
-import React from 'react'
-import img1 from './images/Img 1.png'
+import React from 'react';
+import images from "./images";
+import ImageSlider from "./ImageSlider";
+// import img1 from './images/Img 1.png'
 
 function Gallery() {
   return (
-    <div>
+    <div className='glarrey-container'>
       <h2>Gallery</h2>
-      <img src={img1} alt=''/>
+      <ImageSlider images={images}/>
+      {/* <img className='gallery-img' src={img1} alt=''/> */}
     </div>
   );
 }
