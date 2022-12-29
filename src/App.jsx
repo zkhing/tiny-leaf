@@ -1,8 +1,8 @@
-import "./App.css";
 import React from "react";
-import "./style/variables.css";
+import "./App.css";
+import "./styles/variables.css";
 import Header from "./Header";
-import Footer from "./components/Footer/Footer";
+import Footer from "./Footer";
 import Gallery from "./Gallery";
 import Hero from "./Hero";
 import MakeReservation from "./MakeReservation";
@@ -13,11 +13,17 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <Ourblends />
-      <WiseLeafEvenings />
-      <MakeReservation />
-      <Gallery />
+
+       <main>
+
+         <Hero />
+         <Ourblends />
+         <WiseLeafEvenings />
+         <MakeReservation />
+         <Gallery />
+
+       </main>
+
       <Footer />
     </div>
   );

@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap'); 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 h1 {
-  font-family: "Cormorant";
+  font-family: 'Cormorant', serif;
 }
 
 p {
@@ -12,5 +12,74 @@ p {
 
 .header-wrapper {
   background-color: var(--colour-sage);
+  color: var(--colour-white);
+  display: flex;
+  justify-content: space-around;
+}
+
+.hamburgerMenu{
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.heroImg{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blend-txt{
+  padding-bottom: 20px;
+}
+
+.hand-picked-txt{
+  color: var(--colour-biscuit);
+  font-size: 50px;
+}
+
+.wiseLeafInfo{
+  background-color: var(--colour-sage);
+  padding: 10px;
+}
+
+.reservationImg{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.reservation-container{
+  position: relative;
+  color: var(--colour-white);
+}
+
+.first-txt {
+  position: absolute;
+  font-size: 40px;
+  top: 10px;
+  left: 120px;
+}
+
+.second-txt {
+   position: absolute;
+   bottom: 120px;
+   left: 10px;
+}
+
+.btn-reservation {
+  position: absolute;
+  color: var(--colour-sage);
+  padding: 15px;
+  bottom: 50px;
+  left: 180px;
+}
+
+.footer-container{
+  background-color: var(--colour-sage);
   color: white;
+}
+
+.footer-logo{
+  padding-top: 20px;
 }

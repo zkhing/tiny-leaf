@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import logo from './images/Ellipse 4.svg'
 
-export default function Footer() {
+function Footer() {
   return (
-    <div>
-      <h4>Tiny Leaf Tea House</h4>
+    <div className='footer-container'>
+      <img className="footer-logo" src={logo} alt="Logo" />
+      <h1>Tiny Leaf Tea House</h1>
       <h6>Opening hours</h6>
          <p>Mon - Sat 11am - 12pm 
             Sun 11am - 11pm</p>
@@ -16,3 +18,5 @@ export default function Footer() {
     </div>
   );
 }
+
+export default Footer;
