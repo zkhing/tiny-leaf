@@ -1,8 +1,8 @@
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"
-import React from 'react'
+import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
 
 const ImageSlider = ({images}) => {
 
@@ -13,9 +13,9 @@ const ImageSlider = ({images}) => {
    slidesToScroll: 1,
    lazyLoad: true,
    autoplay: true,
-   autoplaySpeed: 2000,
+   autoplaySpeed: 3000,
   };
-  
+
   return (
    <>
     <div className="imgslider">
