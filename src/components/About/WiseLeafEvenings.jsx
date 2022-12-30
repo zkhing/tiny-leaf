@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "./images/Wiseleaf1.png";
-import img2 from "./images/Wiseleaf2.png";
+import img1 from "../../images/Wiseleaf1.png";
+import img2 from "../../images/Wiseleaf2.png";
 
 function WiseLeafEvenings() {
   return (

@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import "./styles/variables.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import Gallery from "./Gallery";
-import Hero from "./Hero";
-import MakeReservation from "./MakeReservation";
-import Ourblends from "./Ourblends";
-import WiseLeafEvenings from "./WiseLeafEvenings";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Gallery from "./components/Gallery/Gallery";
+import Hero from "./components/Hero/Hero";
+import MakeReservation from "./components/Reservation/MakeReservation";
+import Ourblends from "./components/About/Ourblends";
+import WiseLeafEvenings from "./components/About/WiseLeafEvenings";
 
 function App() {
   return (

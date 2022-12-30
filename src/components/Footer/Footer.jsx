@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './images/Ellipse 4.svg'
+import logo from '../../images/Ellipse 4.svg'
 
 function Footer() {
   return (

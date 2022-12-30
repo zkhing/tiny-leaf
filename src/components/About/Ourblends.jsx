@@ -1,4 +1,4 @@
-import img1 from './images/Blend.png'
+import img1 from '../../images/Blend.png'
 
 function Ourblends() {
   return (
