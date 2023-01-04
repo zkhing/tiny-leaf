@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../images/Background.png";
+import image from "../../../images/Background.png";
 
 function MakeReservation() {
   return (

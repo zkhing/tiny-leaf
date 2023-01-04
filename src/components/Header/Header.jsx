@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from '../../images/Ellipse 4.svg';
 
 function Header() {
@@ -10,9 +11,15 @@ function Header() {
         {/* <img className="hamburgerMenu" src={hamburger} alt="Hamburger menu"/> */}
         <nav className="navbar">
           <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Reservation</li>
+            <li>
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li>
+              <Link className="nav-link" to="/menu">Menu</Link>
+            </li>
+            <li>
+              <Link className="nav-link" to="/reservation">Reservation</Link>
+            </li>
           </ul>
         </nav>
         
