@@ -9,7 +9,7 @@ import MakeReservation from "./components/Home/Reservation/MakeReservation";
 import Ourblends from "./components/Home/About/Ourblends";
 import WiseLeafEvenings from "./components/Home/About/WiseLeafEvenings";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Menu from "./pages/Menu";
+import MenuHero from "./components/Menu/MenuHero"
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
 
        <main>
         <Routes>
+
         <Route exact path="/" element={
         <>
           <Hero />
@@ -33,7 +34,13 @@ function App() {
         </Route>
 
       
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/menu" element={
+          <>
+           <MenuHero />
+          </>
+          }>
+        </Route>
+
         </Routes>
        </main>
 
