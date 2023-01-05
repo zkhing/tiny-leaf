@@ -12,6 +12,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import HeroMenu from "./components/Menu/HeroMenu"
 import ReservationMenu from "./components/Menu/ReservationMenu";
 import TeaMenu from "./components/Menu/TeaMenu";
+import SpecialMenu from "./components/Menu/SpecialMenu";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <>
            <HeroMenu />
            <TeaMenu />
+           <SpecialMenu />
            <ReservationMenu />
           </>
           }>

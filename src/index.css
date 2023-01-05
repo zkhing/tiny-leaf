@@ -138,18 +138,45 @@ li {
   object-fit: cover;
 }
 
-.menu-container{
+
+/* main menu starts here  */
+.tea-menu-container{
   display: grid;
   grid-template-columns: 5fr 1fr;
   grid-gap: 10px;
 }
 
-.header{
+.tea-menu-header{
   grid-column: 1 / -1;
   font-size: 50px;
 }
 
-.sub-header{
+.tea-menu{
+ grid-column: 1 / -1;
+ color: var(--colour-sage);
+ font-size: 20px;
+}
+
+/* special menu starts here  */
+.special-menu-container{
+  display: grid;
+  margin: 30px;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 10px;
+  border: 2px solid var(--colour-biscuit);
+  padding: 20px;
+}
+
+
+.special-menu-header{
+  grid-column: 1 / -1;
+  color: var(--colour-sage);
+  font-size: 30px;
+  
+}
+
+
+.special-menu{
  grid-column: 1 / -1;
  color: var(--colour-sage);
  font-size: 20px;

@@ -25,9 +25,9 @@ price:"5.50"}
 ];
 
   return (
-    <div className='menu-container'>
-        <div className='header'>Loose leaf teas</div>
-         {items.map(item=> <TeaMenuItem name={item.name} info={item.info} price={item.price}/>)}
+    <div className='tea-menu-container'>
+        <div className='tea-menu-header'>Loose leaf teas</div>
+        {items.map(item => <TeaMenuItem name={item.name} info={item.info} price={item.price}/>)}
     </div>
   )
 }
