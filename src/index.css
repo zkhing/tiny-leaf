@@ -45,7 +45,7 @@ li {
 } */
 
 /* hero section here  */
-.heroImg {
+.home-hero-img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -62,7 +62,7 @@ li {
 }
 
 /* wise-leaf section starts here*/
-.wiseLeafInfo {
+.wiseleaf-info {
   background-color: var(--colour-sage);
   padding: 30px;
   margin: 10px;
@@ -73,7 +73,7 @@ li {
 }
 
 /* reservation section starts here */
-.reservationImg {
+.home-reservation-img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -127,4 +127,30 @@ li {
 
 .social-logo {
   float: right;
+}
+
+/* -------------------------- */
+/* Menu page starts here */
+
+.menu-hero-img, .menu-reservation-img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.menu-container{
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 10px;
+}
+
+.header{
+  grid-column: 1 / -1;
+  font-size: 50px;
+}
+
+.sub-header{
+ grid-column: 1 / -1;
+ color: var(--colour-sage);
+ font-size: 20px;
 }

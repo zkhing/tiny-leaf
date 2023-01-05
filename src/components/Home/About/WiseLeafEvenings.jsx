@@ -7,7 +7,7 @@ function WiseLeafEvenings() {
     <div className="wiseLeaf-container">
       <img src={img1} alt="" />
 
-      <div className="wiseLeafInfo">
+      <div className="wiseleaf-info">
       <h2>WiseLeafEvenings</h2>
       <p>
         Bringing together those with curious minds, speakers and observers

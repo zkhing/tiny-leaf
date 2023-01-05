@@ -9,7 +9,9 @@ import MakeReservation from "./components/Home/Reservation/MakeReservation";
 import Ourblends from "./components/Home/About/Ourblends";
 import WiseLeafEvenings from "./components/Home/About/WiseLeafEvenings";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import MenuHero from "./components/Menu/MenuHero"
+import HeroMenu from "./components/Menu/HeroMenu"
+import ReservationMenu from "./components/Menu/ReservationMenu";
+import TeaMenu from "./components/Menu/TeaMenu";
 
 function App() {
   return (
@@ -36,7 +38,9 @@ function App() {
       
         <Route path="/menu" element={
           <>
-           <MenuHero />
+           <HeroMenu />
+           <TeaMenu />
+           <ReservationMenu />
           </>
           }>
         </Route>
