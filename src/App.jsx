@@ -13,6 +13,8 @@ import HeroMenu from "./components/Menu/HeroMenu"
 import ReservationMenu from "./components/Menu/ReservationMenu";
 import TeaMenu from "./components/Menu/TeaMenu";
 import SpecialMenu from "./components/Menu/SpecialMenu";
+import HeroReservation from "./components/Reservations/HeroReservation";
+import Ctablock from "./components/Reservations/Ctablock";
 
 function App() {
   return (
@@ -43,6 +45,14 @@ function App() {
            <TeaMenu />
            <SpecialMenu />
            <ReservationMenu />
+          </>
+          }>
+        </Route>
+
+        <Route path="/reservation" element={
+          <>
+           <HeroReservation />
+           <Ctablock />
           </>
           }>
         </Route>
