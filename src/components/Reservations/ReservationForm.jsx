@@ -13,42 +13,68 @@ function ReservationForm() {
   }
 
   return (
-    <div className='reservation-form'>
-        <form onSubmit={handleSubmit}>
-          <h3> Reserve a table </h3>
-          <p>We take bookings for groups up to 6. We get busy on weekends so best to book early to avoid disappointment!</p>
-         
-         <div>
-           <label>Date</label>
-           <label>Time</label>
-           <label>Group size</label>
-         </div>
+    <div className="reservation-form">
+      <form onSubmit={handleSubmit} className="wrapper">
+        <h3> Reserve a table </h3>
+        <p>
+          We take bookings for groups up to 6. We get busy on weekends so best
+          to book early to avoid disappointment!
+        </p>
 
-         <div>
-          <input type="number" value={date} onChange={(e) => setDate(e.target.value)}/>
-          <input type="number" value={time} onChange={(e) => setTime(e.target.value)}/>
-          <input type="number" value={groupSize} onChange={(e) => setGroupSize(e.target.value)}/>
-         </div>
+        <div className="first-label">
+          <label>Date</label>
+          <label>Time</label>
+          <label>Group size</label>
+        </div>
 
-         <div>
+        <div className="first-input">
+          <input
+            type="number"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+          <input
+            type="number"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+          />
+          <input
+            type="number"
+            value={groupSize}
+            onChange={(e) => setGroupSize(e.target.value)}
+          />
+        </div>
+
+        <div className="second-label">
           <label>Name</label>
           <label>Contact number</label>
-         </div>
+        </div>
 
-         <div>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
-          <input type="number" value={contact} onChange={(e) => setContact(e.target.value)}/>
-         </div>
+        <div className='second-input'>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="number"
+            value={contact}
+            onChange={(e) => setContact(e.target.value)}
+          />
+        </div>
 
-         <div>
+        <div>
           <label>Comment / requests</label>
-          <textarea value={textarea} onChange={(e) => setTextarea(e.target.value)}/>
-         </div>
+          <textarea
+            value={textarea}
+            onChange={(e) => setTextarea(e.target.value)}
+          />
+        </div>
 
-          <button type="submit">Reserve</button>
-         </form>
+        <button type="submit">Reserve</button>
+      </form>
     </div>
-  )
+  );
 }
 
 export default ReservationForm

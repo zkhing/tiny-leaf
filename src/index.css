@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-h1{
-  font-family: "Cormorant", serif;
+h1 {
+  font-family: "Cormorant";
+}
+
+h3{
+  font-size: 50px;
 }
 
 p {
   margin: 0;
-  font-family: "Roboto";
+  --font-roboto: "Roboto", Arial, sans-serif;
 }
 
 /* header section and nav bar start here  */
@@ -15,11 +19,19 @@ p {
   background-color: var(--colour-sage);
   color: var(--colour-white);
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+.header-logo{
+  display: flex;
+  justify-content: left;
+  padding-left: 10px;
 }
 
 .navbar {
   display: flex;
+  justify-content: right;
+  margin: 0%;
 }
 
 ul {
@@ -30,26 +42,57 @@ ul {
 }
 
 li {
-  padding: 10px; 
+  padding: 10px;
 }
 
-.nav-link{
+.nav-link {
   color: var(--colour-white);
   text-decoration: none;
 }
 
-/* hero section here  */
-.home-hero{
+li:hover{
+  background-color: var(--colour-biscuit);
+}
+
+/* footer section starts here */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colour-sage);
+  color: var(--colour-white);
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.social-logo {
+  display: flex;
+ justify-content: flex-end;
+}
+
+/* ---------------------------  */
+/* Home hero section here  */
+.home-hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./images/Home/Hero.png');
+  background-image: url("./images/Home/Hero.png");
   font-family: "Cormorant", serif;
   min-height: 500px;
   background-size: cover;
 }
 
-.home-hero-title{
+.home-hero-title {
   color: var(--colour-white);
   font-size: 88px;
 }
@@ -66,7 +109,7 @@ li {
 }
 
 /* wise-leaf section starts here*/
-.wiseleaf-container{
+.wiseleaf-container {
   display: grid;
 }
 
@@ -83,7 +126,7 @@ li {
 /* reservation section starts here */
 
 .reservation-container {
-  background-image: url('./images/Home/Background.png');
+  background-image: url("./images/Home/Background.png");
   display: flex;
   justify-content: center;
   color: var(--colour-white);
@@ -97,11 +140,7 @@ li {
   max-width: 640px;
 }
 
-.first-txt {
-  font-size: 40px;
-}
-
-.second-txt{
+.second-txt {
   margin-bottom: 20px;
 }
 
@@ -111,67 +150,50 @@ li {
 }
 
 /* gallery section starts here  */
-.imgslider{
+.imgslider {
   width: 100%;
 }
 
-/* footer section starts here */
-.footer-container {
-  background-color: var(--colour-sage);
-  color: var(--colour-white);
-  padding: 20px;
-}
 
-.footer-logo {
-  padding-top: 20px;
-}
-
-.footer-info {
-  text-align: left;
-}
-
-.social-logo {
-  float: right;
-}
 
 /* -------------------------- */
 /* Menu page starts here */
 /* hero section  */
-.menu-hero{
+.menu-hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./images/Menu/Hero.png');
+  background-image: url("./images/Menu/Hero.png");
   font-family: "Cormorant", serif;
-  min-height: 400px;
+  min-height: 500px;
   background-size: cover;
 }
 
-.menu-hero-title{
+.menu-hero-title {
   color: var(--colour-white);
   font-size: 88px;
 }
 /* main menu starts here  */
-.tea-menu-container{
+.tea-menu-container {
   display: grid;
   grid-template-columns: 5fr 1fr;
   grid-gap: 10px;
 }
 
-.tea-menu-header{
+.tea-menu-header {
   grid-column: 1 / -1;
   font-size: 50px;
 }
 
-.tea-menu{
- grid-column: 1 / -1;
- color: var(--colour-sage);
- font-size: 20px;
+.tea-menu {
+  grid-column: 1 / -1;
+  color: var(--colour-sage);
+  font-size: 20px;
 }
 
 /* special menu starts here  */
 
-.special-menu-container{
+.special-menu-container {
   display: grid;
   margin: 30px;
   grid-template-columns: 5fr 1fr;
@@ -180,27 +202,26 @@ li {
   padding: 20px;
 }
 
-.special-menu-header{
+.special-menu-header {
   grid-column: 1 / -1;
   color: var(--colour-sage);
   font-size: 30px;
-  
 }
 
-.special-menu{
- grid-column: 1 / -1;
- color: var(--colour-sage);
- font-size: 20px;
+.special-menu {
+  grid-column: 1 / -1;
+  color: var(--colour-sage);
+  font-size: 20px;
 }
 
 /* reservea a table */
 .reservation-menu-container {
-  background-image: url('./images/Menu/Background.png');
+  background-image: url("./images/Menu/Background.png");
   display: flex;
   justify-content: center;
   color: var(--colour-white);
   align-items: center;
-  min-height: 400px;
+  min-height: 500px;
   background-size: cover;
 }
 
@@ -209,11 +230,7 @@ li {
   max-width: 640px;
 }
 
-.reservation-first-txt {
-  font-size: 40px;
-}
-
-.reservation-second-txt{
+.reservation-second-txt {
   margin-bottom: 20px;
 }
 
@@ -224,36 +241,51 @@ li {
 
 /* ---------------------- */
 /* Reservation section starts here  */
-.reservation-hero{
+.reservation-hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./images/Reservations/Hero.png');
+  background-image: url("./images/Reservations/Hero.png");
   font-family: "Cormorant", serif;
-  min-height: 400px;
+  min-height: 500px;
   background-size: cover;
 }
 
-.reservation-hero-title{
+.reservation-hero-title {
   color: var(--colour-white);
   font-size: 88px;
 }
 
 /* reservation form starts here  */
-.reservation-form{
-  margin: 50px;
-  
+.reservation-form {
+  margin: 2em 15em 2em 15em;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-label,
+.first-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* .second-label, .second-input{
+  display: flex;
+  justify-content: flex-end;
+} */
 
 /* reservation menu here  */
 .menu-items-container {
-  background-image: url('./images/Reservations/Background.png');
+  background-image: url("./images/Reservations/Background.png");
   display: flex;
   justify-content: center;
   color: var(--colour-white);
   align-items: center;
-  min-height: 400px;
+  min-height: 500px;
   background-size: cover;
 }
 
@@ -262,11 +294,7 @@ li {
   max-width: 640px;
 }
 
-.items-first-txt {
-  font-size: 40px;
-}
-
-.items-second-txt{
+.items-second-txt {
   margin-bottom: 20px;
 }
 
