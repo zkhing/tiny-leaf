@@ -10,7 +10,7 @@ function Ourblends() {
         sustainably and make sure the hands that laboured for our flavoursome
         cups were rewarded fairly.
       </p>
-      <img src={img1} alt="" />
+      <img src={img1} alt="Our blends" />
       <h4 className='hand-picked-txt'>Hand-picked and sustainable</h4>
     </div>
   );

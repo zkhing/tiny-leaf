@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-h1,
-h3 {
+h1{
   font-family: "Cormorant", serif;
 }
 
@@ -40,11 +39,21 @@ li {
 }
 
 /* hero section here  */
-.home-hero-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.home-hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/Home/Hero.png');
+  font-family: "Cormorant", serif;
+  min-height: 500px;
+  background-size: cover;
 }
+
+.home-hero-title{
+  color: var(--colour-white);
+  font-size: 88px;
+}
+
 
 /* about section starts here  */
 .blend-txt {
@@ -57,6 +66,10 @@ li {
 }
 
 /* wise-leaf section starts here*/
+.wiseleaf-container{
+  display: grid;
+}
+
 .wiseleaf-info {
   background-color: var(--colour-sage);
   padding: 30px;
@@ -68,23 +81,20 @@ li {
 }
 
 /* reservation section starts here */
-.home-reservation-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 
 .reservation-container {
-  position: relative;
+  background-image: url('./images/Home/Background.png');
+  display: flex;
+  justify-content: center;
+  color: var(--colour-white);
+  align-items: center;
+  min-height: 500px;
+  background-size: cover;
 }
 
 .caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50% );
-    text-align: center;
-    color: var(--colour-white);
+  text-align: center;
+  max-width: 640px;
 }
 
 .first-txt {
@@ -101,8 +111,8 @@ li {
 }
 
 /* gallery section starts here  */
-.gallery-img {
-  margin: 20px;
+.imgslider{
+  width: 100%;
 }
 
 /* footer section starts here */
@@ -126,13 +136,21 @@ li {
 
 /* -------------------------- */
 /* Menu page starts here */
-
-.menu-hero-img, .menu-reservation-img{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+/* hero section  */
+.menu-hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/Menu/Hero.png');
+  font-family: "Cormorant", serif;
+  min-height: 400px;
+  background-size: cover;
 }
 
+.menu-hero-title{
+  color: var(--colour-white);
+  font-size: 88px;
+}
 /* main menu starts here  */
 .tea-menu-container{
   display: grid;
@@ -152,6 +170,7 @@ li {
 }
 
 /* special menu starts here  */
+
 .special-menu-container{
   display: grid;
   margin: 30px;
@@ -174,10 +193,84 @@ li {
  font-size: 20px;
 }
 
+/* reservea a table */
+.reservation-menu-container {
+  background-image: url('./images/Menu/Background.png');
+  display: flex;
+  justify-content: center;
+  color: var(--colour-white);
+  align-items: center;
+  min-height: 400px;
+  background-size: cover;
+}
+
+.reservation-caption {
+  text-align: center;
+  max-width: 640px;
+}
+
+.reservation-first-txt {
+  font-size: 40px;
+}
+
+.reservation-second-txt{
+  margin-bottom: 20px;
+}
+
+.reservation-menu-btn {
+  color: var(--colour-sage);
+  padding: 15px;
+}
+
 /* ---------------------- */
 /* Reservation section starts here  */
-.reservation-hero-img, .reservation-blend-img{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.reservation-hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/Reservations/Hero.png');
+  font-family: "Cormorant", serif;
+  min-height: 400px;
+  background-size: cover;
+}
+
+.reservation-hero-title{
+  color: var(--colour-white);
+  font-size: 88px;
+}
+
+/* reservation form starts here  */
+.reservation-form{
+  margin: 50px;
+  
+}
+
+
+/* reservation menu here  */
+.menu-items-container {
+  background-image: url('./images/Reservations/Background.png');
+  display: flex;
+  justify-content: center;
+  color: var(--colour-white);
+  align-items: center;
+  min-height: 400px;
+  background-size: cover;
+}
+
+.items-caption {
+  text-align: center;
+  max-width: 640px;
+}
+
+.items-first-txt {
+  font-size: 40px;
+}
+
+.items-second-txt{
+  margin-bottom: 20px;
+}
+
+.items-btn {
+  color: var(--colour-sage);
+  padding: 15px;
 }

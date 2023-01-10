@@ -1,12 +1,11 @@
 import React from 'react'
-import hero from '../../images/Menu/Hero.png';
 
-function Hero() {
+function HeroMenu() {
   return (
-    <div>
-      <img className='menu-hero-img' src={hero} alt="Hero"/>  
+    <div className="menu-hero">
+      <h1 className="menu-hero-title">Menu</h1>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default HeroMenu

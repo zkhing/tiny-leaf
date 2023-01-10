@@ -3,18 +3,12 @@ import "./App.css";
 import "./styles/variables.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Gallery from "./components/Home/Gallery/Gallery";
-import Hero from "./components/Home/Hero/Hero";
-import MakeReservation from "./components/Home/Reservation/MakeReservation";
-import Ourblends from "./components/Home/About/Ourblends";
-import WiseLeafEvenings from "./components/Home/About/WiseLeafEvenings";
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import HeroMenu from "./components/Menu/HeroMenu"
-import ReservationMenu from "./components/Menu/ReservationMenu";
-import TeaMenu from "./components/Menu/TeaMenu";
-import SpecialMenu from "./components/Menu/SpecialMenu";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import HeroReservation from "./components/Reservations/HeroReservation";
-import Ctablock from "./components/Reservations/Ctablock";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import ReservationForm from "./components/Reservations/ReservationForm";
+import MenuItems from "./components/Reservations/MenuItems";
 
 function App() {
   return (
@@ -24,35 +18,17 @@ function App() {
         <Header />
       </header>
 
-       <main>
+      <main>
         <Routes>
 
-        <Route exact path="/" element={
-        <>
-          <Hero />
-          <Ourblends />
-          <WiseLeafEvenings />
-          <MakeReservation />
-          <Gallery />
-        </>
-        }>
-        </Route>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
 
-      
-        <Route path="/menu" element={
-          <>
-           <HeroMenu />
-           <TeaMenu />
-           <SpecialMenu />
-           <ReservationMenu />
-          </>
-          }>
-        </Route>
-
-        <Route path="/reservation" element={
+          <Route path="/reservation" element={
           <>
            <HeroReservation />
-           <Ctablock />
+           <ReservationForm />
+           <MenuItems />
           </>
           }>
         </Route>

@@ -1,10 +1,9 @@
-import React from "react";
-import img1 from "../../../images/Home/Hero.png";
+import React from "react"
 
 function Hero() {
   return (
-    <div>
-      <img className="home-hero-img" src={img1} alt="" />
+    <div className="home-hero">
+      <h1 className="home-hero-title">A flavour for all seasons</h1>
     </div>
   );
 }
