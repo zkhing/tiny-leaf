@@ -4,13 +4,12 @@ import img2 from "../../../images/Home/Wiseleaf2.png";
 
 function WiseLeafEvenings() {
   return (
-    <div className="wiseleaf-container">
+    <>
+      <section className="wiseleaf-container">
+        <div className="wiseleaf-img1">
+          <img src={img1} alt="teapot" />
+        </div>
 
-      <section>
-        <img src={img1} alt="" />
-      </section>
-
-      <section>
         <div className="wiseleaf-info">
           <h2>WiseLeafEvenings</h2>
           <p>
@@ -19,12 +18,12 @@ function WiseLeafEvenings() {
             contemplate.
           </p>
         </div>
-      </section>
 
-      <section>
-        <img className="wiseLeaf-img2" src={img2} alt="" />
+        <div className="wiseleaf-img2">
+          <img src={img2} alt="flowers" />
+        </div>
       </section>
-    </div>
+    </>
   );
 }
 

@@ -50,7 +50,7 @@ function ReservationForm() {
           <label>Contact number</label>
         </div>
 
-        <div className='second-input'>
+        <div className="second-input">
           <input
             type="text"
             value={name}
@@ -69,6 +69,13 @@ function ReservationForm() {
             value={textarea}
             onChange={(e) => setTextarea(e.target.value)}
           />
+        </div>
+
+        <div>
+          <input type="checkbox" value="tandc" />
+            By requesting this booking, I am accepting Tiny Leaf's Terms and
+            Conditions.
+      
         </div>
 
         <button type="submit">Reserve</button>

@@ -7,22 +7,22 @@ const images = [
   {
     id: 1,
     src: img1,
-    alt: "Image 1",
+    alt: "Image1",
   },
   {
     id: 2,
     src: img2,
-    alt: "Image 2",
+    alt: "Image2",
   },
   {
     id: 3,
     src: img3,
-    alt: "Image 3",
+    alt: "Image3",
   },
   {
     id: 4,
     src: img4,
-    alt: "Image 3",
+    alt: "Image4",
   }
 ];
 

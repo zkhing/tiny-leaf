@@ -5,10 +5,9 @@ import ImageSlider from "./ImageSlider";
 
 function Gallery() {
   return (
-    <div className='glarrey-container'>
+    <div className='gallery-container'>
       <h2>Gallery</h2>
       <ImageSlider images={images}/>
-      {/* <img className='gallery-img' src={img1} alt=''/> */}
     </div>
   );
 }
