@@ -1,36 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&display=swap'); 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
-  font-family: "Cormorant";
+  font-family: 'Cormorant', serif;
 }
 
 h3 {
+  font-family: 'Cormorant', serif;
   font-size: 50px;
 }
 
 p {
-  margin: 0;
-  --font-roboto: "Roboto", Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 /* header section and nav bar start here  */
-.header-wrapper {
+.navbar-container {
   background-color: var(--colour-sage);
   color: var(--colour-white);
   display: flex;
-  flex-direction: column;
-}
+  justify-content: space-between;
+  align-items: center;
+} 
 
-.header-logo {
+.logo {
   display: flex;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 ul {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
   list-style-type: none;
   padding: 20px;
 }
@@ -88,16 +93,18 @@ li:hover {
 .home-hero-title {
   color: var(--colour-white);
   font-size: 88px;
+  padding: 0px 50px;
 }
 
 /* about section starts here  */
-.blend-txt {
-  padding-bottom: 30px;
+.blend-info {
+  padding: 20px;
 }
 
 .hand-picked-txt {
   color: var(--colour-biscuit);
-  font-size: 50px;
+  font-family: 'Cormorant', serif;
+  font-size: 61px;
 }
 
 /* wise-leaf section starts here*/
