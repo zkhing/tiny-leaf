@@ -8,7 +8,7 @@ function Navbar() {
       <div className="navbar-container">
         <div className="logo">
           <img src={logo} alt="Logo" />
-          <h1>Tiny Leaf Tea House</h1>
+          <h2>Tiny Leaf Tea House</h2>
         </div>
 
         <div className="nav-elements">

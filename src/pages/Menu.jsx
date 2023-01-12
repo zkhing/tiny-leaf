@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroMenu from "../components/Menu/HeroMenu"
+import MenuHero from "../components/Menu/MenuHero"
 import ReservationMenu from "../components/Menu/ReservationMenu";
 import TeaMenu from "../components/Menu/TeaMenu";
 import SpecialMenu from "../components/Menu/SpecialMenu"; 
@@ -7,7 +7,7 @@ import SpecialMenu from "../components/Menu/SpecialMenu";
 function Menu() {
   return (
     <div>
-      <HeroMenu />
+      <MenuHero />
       <TeaMenu />
       <SpecialMenu />
       <ReservationMenu />

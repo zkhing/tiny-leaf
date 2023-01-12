@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&display=swap'); 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+} 
 
 body {
   margin: 0;
@@ -90,15 +93,16 @@ li:hover {
   background-size: cover;
 }
 
-.home-hero-title {
+.hero-title {
   color: var(--colour-white);
-  font-size: 88px;
   padding: 0px 50px;
+  font-size: 88px;
 }
 
 /* about section starts here  */
-.blend-info {
-  padding: 20px;
+.blend-img{
+ width: 100%;
+ height: auto;
 }
 
 .hand-picked-txt {
@@ -108,6 +112,9 @@ li:hover {
 }
 
 /* wise-leaf section starts here*/
+
+
+
 .wiseleaf-info {
   background-color: var(--colour-sage);
   padding: 20px;
@@ -158,37 +165,42 @@ li:hover {
   background-size: cover;
 }
 
-.menu-hero-title {
-  color: var(--colour-white);
-  font-size: 88px;
-}
+
 /* main menu starts here  */
 .tea-menu-container {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-gap: 10px;
 }
 
 .tea-menu-header {
   grid-column: 1 / -1;
   font-size: 50px;
+  margin-top: 30px;
+  padding-left: 50px;
 }
 
 .tea-menu {
   grid-column: 1 / -1;
   color: var(--colour-sage);
+  padding-left: 50px;
   font-size: 20px;
+}
+
+.info{
+  padding-left: 50px; 
 }
 
 /* special menu starts here  */
 
 .special-menu-container {
   display: grid;
-  margin: 30px;
   grid-template-columns: 5fr 1fr;
   grid-gap: 10px;
+  margin: 5em;
+  padding: 4em;
   border: 2px solid var(--colour-biscuit);
-  padding: 20px;
+  
 }
 
 .special-menu-header {
@@ -208,8 +220,8 @@ li:hover {
   background-image: url("./images/Menu/Background.png");
   display: flex;
   justify-content: center;
-  color: var(--colour-white);
   align-items: center;
+  color: var(--colour-white);
   min-height: 500px;
   background-size: cover;
 }
@@ -219,13 +231,19 @@ li:hover {
   max-width: 640px;
 }
 
+.reservation-first-txt{
+   font-size: 64px;
+}
+
 .reservation-second-txt {
   margin-bottom: 20px;
+  font-size: 22px;
 }
 
 .reservation-menu-btn {
   color: var(--colour-sage);
   padding: 15px;
+  font-size: 21px;
 }
 
 /* ---------------------- */
@@ -240,10 +258,6 @@ li:hover {
   background-size: cover;
 }
 
-.reservation-hero-title {
-  color: var(--colour-white);
-  font-size: 88px;
-}
 
 /* reservation form starts here  */
 .reservation-form {
@@ -304,7 +318,12 @@ label {
     margin-top: 20px;
   }
 
+  .column{
+    flex: 50%;
+  }
+
   /* ----------wiseleaf grid for tablet------ */
+  
   .wiseleaf-container {
     display: grid;
     grid-template-columns: 50px 5fr 70px 6fr 50px;

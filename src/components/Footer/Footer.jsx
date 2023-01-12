@@ -5,40 +5,42 @@ import social from '../../images/Social.png';
 function Footer() {
   return (
     <div className="footer-container">
-      <section className="footer-logo">
+
+      <div className="footer-logo">
         <img src={logo} alt="Logo" />
-        <h1>Tiny Leaf Tea House</h1>
-      </section>
+        <h2>Tiny Leaf Tea House</h2>
+      </div>
 
       <div className="footer-info">
-        <section>
+        <div>
           <h4>Opening hours</h4>
           <p>
             Mon - Sat 11am - 12pm<br></br>
             Sun 11am - 11pm
           </p>
-        </section>
+        </div>
 
-        <section>
+        <div>
           <h4>Address</h4>
           <p>
             24 Brew Lane<br></br>
             BR3 WL, CupTown
           </p>
-        </section>
+        </div>
 
-        <section>
+        <div>
           <h4>Contact</h4>
           <p>
             +44 12345 67890<br></br>
             hello@yellowmountain.com
           </p>
-        </section>
+        </div>
       </div>
 
-      <section className="social-logo">
+      <div className="social-logo">
         <img src={social} alt="" />
-      </section>
+      </div>
+
     </div>
   );
 }

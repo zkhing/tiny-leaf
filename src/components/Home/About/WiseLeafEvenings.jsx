@@ -7,7 +7,7 @@ function WiseLeafEvenings() {
     <>
       <section className="wiseleaf-container">
         <div className="wiseleaf-img1">
-          <img src={img1} alt="teapot" />
+          <img className="teapot-img" src={img1} alt="teapot" />
         </div>
 
         <div className="wiseleaf-info">
@@ -20,7 +20,7 @@ function WiseLeafEvenings() {
         </div>
 
         <div className="wiseleaf-img2">
-          <img src={img2} alt="flowers" />
+          <img className="flowers-img" src={img2} alt="flowers" />
         </div>
       </section>
     </>
