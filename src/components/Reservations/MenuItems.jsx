@@ -3,14 +3,14 @@ import React from 'react'
 
 function MenuItems() {
   return (
-    <div className="menu-items-container">
-      <div className="items-caption">
-        <h3 className="itmes-first-txt">No storms in our tea cups</h3>
-        <p className="items-second-txt">
+    <div className="menu-items">
+      <div className="caption">
+        <h1 className="title">No storms in our tea cups</h1>
+        <p className="text">
           We make our blends with love and care, so you can taste aromas from
           across the globe right here in our tea house
         </p>
-        <button className="items-btn">See what's on the menu</button>
+        <button className="menu-btn">See what's on the menu</button>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
 import MenuHero from "../components/Menu/MenuHero"
-import ReservationMenu from "../components/Menu/ReservationMenu";
+import MenuReservation from "../components/Menu/MenuReservation";
 import TeaMenu from "../components/Menu/TeaMenu";
 import SpecialMenu from "../components/Menu/SpecialMenu"; 
 
@@ -10,7 +10,7 @@ function Menu() {
       <MenuHero />
       <TeaMenu />
       <SpecialMenu />
-      <ReservationMenu />
+      <MenuReservation />
     </div>
   )
 }

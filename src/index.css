@@ -123,7 +123,7 @@ li:hover {
 
 /* reservation section starts here */
 
-.reservation-container {
+.home-reservation{
   background-image: url("./images/Home/Background.png");
   display: flex;
   justify-content: center;
@@ -138,18 +138,19 @@ li:hover {
   max-width: 640px;
 }
 
-.second-txt {
-  margin-bottom: 20px;
+.title{
+   font-size: 64px;
 }
 
-.btn-reservation {
+.text {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.reservation-btn {
   color: var(--colour-sage);
   padding: 15px;
-}
-
-/* gallery section starts here  */
-.imgslider {
-  width: 100%;
+  font-size: 21px;
 }
 
 /* -------------------------- */
@@ -200,7 +201,6 @@ li:hover {
   margin: 5em;
   padding: 4em;
   border: 2px solid var(--colour-biscuit);
-  
 }
 
 .special-menu-header {
@@ -215,8 +215,9 @@ li:hover {
   font-size: 20px;
 }
 
-/* reservea a table */
-.reservation-menu-container {
+
+/* reserve a table */
+.menu-reservation{
   background-image: url("./images/Menu/Background.png");
   display: flex;
   justify-content: center;
@@ -226,25 +227,7 @@ li:hover {
   background-size: cover;
 }
 
-.reservation-caption {
-  text-align: center;
-  max-width: 640px;
-}
 
-.reservation-first-txt{
-   font-size: 64px;
-}
-
-.reservation-second-txt {
-  margin-bottom: 20px;
-  font-size: 22px;
-}
-
-.reservation-menu-btn {
-  color: var(--colour-sage);
-  padding: 15px;
-  font-size: 21px;
-}
 
 /* ---------------------- */
 /* Reservation section starts here  */
@@ -287,7 +270,7 @@ label {
 } */
 
 /* reservation menu here  */
-.menu-items-container {
+.menu-items{
   background-image: url("./images/Reservations/Background.png");
   display: flex;
   justify-content: center;
@@ -297,22 +280,14 @@ label {
   background-size: cover;
 }
 
-.items-caption {
-  text-align: center;
-  max-width: 640px;
-}
-
-.items-second-txt {
-  margin-bottom: 20px;
-}
-
-.items-btn {
+.menu-btn {
   color: var(--colour-sage);
   padding: 15px;
 }
 
-/* ----------- */
+/* ----------- media query section------*/
 @media only screen and (min-width: 540px) {
+
   .blend-container {
     display: flex;
     margin-top: 20px;
