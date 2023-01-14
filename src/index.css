@@ -239,32 +239,83 @@ li:hover {
 
 
 /* reservation form starts here  */
-.reservation-form {
-  margin: 2em 15em 2em 15em;
+.form-container{
+  display: grid;
+  grid-template-areas: 
+     'l1 l2'
+     'i1 i2'
+     'l3 .'
+     'i3 .'
+     'l4 l4'
+     'i4 i4'
+     'l5 l5'
+     'i5 i5'
+     'l6 l6'
+     'ta ta'
+     'cb l7'
+     'btn .';
+     grid-gap: 5px;
+    margin: 2em 5em;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
+.label1{
+  grid-area: l1;
 }
 
-input,
-label {
-  color: var(--colour-sage);
+.input1{
+  grid-area: i1;
 }
 
-.first-label,
-.first-input {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+.label2{
+  grid-area: l2;
 }
 
-/* .second-label, .second-input{
-  display: flex;
-  justify-content: flex-end;
-} */
+.input2{
+  grid-area: i2;
+}
 
+.label3{
+  grid-area: l3;
+}
+
+.input3{
+  grid-area: i3;
+}
+
+.label4{
+  grid-area: l4;
+}
+
+.input4{
+  grid-area: i4;
+}
+
+.label5{
+  grid-area: l5;
+}
+
+.input5{
+  grid-area: i5;
+}
+
+.label6{
+  grid-area: l6;
+}
+
+.textarea{
+  grid-area: ta;
+}
+
+.checkbox{
+  grid-area: cb;
+}
+
+.label7{
+  grid-area: l7;
+}
+.submit-btn{
+  grid-area: btn;
+}
 
 /* reservation menu here  */
 .menu-items{
