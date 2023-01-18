@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
@@ -7,16 +7,16 @@ body {
 }
 
 h1 {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
 }
 
 h3 {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 50px;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
@@ -27,7 +27,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-} 
+}
 
 .logo {
   display: flex;
@@ -69,7 +69,7 @@ li:hover {
   padding-top: 20px;
 }
 
-.footer-text{
+.footer-text {
   padding-right: 13em;
 }
 
@@ -97,29 +97,32 @@ li:hover {
 }
 
 /* about section starts here  */
-.blend-img{
- width: 100%;
- height: auto;
+.blend-img {
+  max-width: 100%;
+  height: auto;
 }
 
 .hand-picked-txt {
   color: var(--colour-biscuit);
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 61px;
 }
 
-
 /* wise-leaf section starts here*/
+.teapot-image{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .wiseleaf-info {
   background-color: var(--colour-sage);
   padding: 20px;
   margin-bottom: 20px;
 }
 
-
-
 /* reservation section starts here */
-.home-reservation{
+.home-reservation {
   background-image: url("./images/Home/Background.png");
   display: flex;
   justify-content: center;
@@ -134,8 +137,8 @@ li:hover {
   max-width: 640px;
 }
 
-.title{
-   font-size: 64px;
+.title {
+  font-size: 64px;
 }
 
 .text {
@@ -149,7 +152,6 @@ li:hover {
   font-size: 21px;
 }
 
-
 /* -------------------------- */
 /* Menu page starts here */
 /* hero section  */
@@ -162,7 +164,6 @@ li:hover {
   min-height: 500px;
   background-size: cover;
 }
-
 
 /* main menu starts here  */
 .tea-menu-container {
@@ -185,8 +186,8 @@ li:hover {
   font-size: 20px;
 }
 
-.info{
-  padding-left: 50px; 
+.info {
+  padding-left: 50px;
 }
 
 /* special menu starts here  */
@@ -211,9 +212,8 @@ li:hover {
   font-size: 20px;
 }
 
-
 /* reserve a table */
-.menu-reservation{
+.menu-reservation {
   background-image: url("./images/Menu/Background.png");
   display: flex;
   justify-content: center;
@@ -222,8 +222,6 @@ li:hover {
   min-height: 500px;
   background-size: cover;
 }
-
-
 
 /* ---------------------- */
 /* Reservation section starts here  */
@@ -237,88 +235,102 @@ li:hover {
   background-size: cover;
 }
 
-
-/* reservation form starts here  */
-.form-container{
-  display: grid;
-  grid-template-areas: 
-     'l1 l2'
-     'i1 i2'
-     'l3 .'
-     'i3 .'
-     'l4 l4'
-     'i4 i4'
-     'l5 l5'
-     'i5 i5'
-     'l6 l6'
-     'ta ta'
-     'cb l7'
-     'btn .';
-     grid-gap: 5px;
-    margin: 2em 5em;
+.logo-img{
+  margin: 20px 0 0 20px;
 }
 
-.label1{
+.form-title{
+  margin: 20px 0 0 20px;
+}
+
+/* reservation form starts here  */
+.form-container {
+  display: grid;
+  grid-template-areas:
+    "l1 l2"
+    "i1 i2"
+    "l3 ."
+    "i3 ."
+    "l4 l4"
+    "i4 i4"
+    "l5 l5"
+    "i5 i5"
+    "l6 l6"
+    "ta ta"
+    "cb l7"
+    "btn .";
+  grid-gap: 5px;
+  margin: 2em 5em;
+}
+
+.label1 {
   grid-area: l1;
 }
 
-.input1{
+.input1 {
   grid-area: i1;
 }
 
-.label2{
+.label2 {
   grid-area: l2;
 }
 
-.input2{
+.input2 {
   grid-area: i2;
 }
 
-.label3{
+.label3 {
   grid-area: l3;
 }
 
-.input3{
+.input3 {
   grid-area: i3;
 }
 
-.label4{
+.label4 {
   grid-area: l4;
 }
 
-.input4{
+.input4 {
   grid-area: i4;
 }
 
-.label5{
+.label5 {
   grid-area: l5;
 }
 
-.input5{
+.input5 {
   grid-area: i5;
 }
 
-.label6{
+.label6 {
   grid-area: l6;
 }
 
-.textarea{
+.textarea {
   grid-area: ta;
 }
 
-.checkbox{
+.checkbox {
   grid-area: cb;
 }
 
-.label7{
+.label7 {
   grid-area: l7;
 }
-.submit-btn{
+.btn-submit {
   grid-area: btn;
+  padding: 20px;
+  background-color: var(--colour-sage);
+  color: var(--colour-white);
+}
+
+input,label{
+  color: var(--colour-sage);
 }
 
 /* reservation menu here  */
-.menu-items{
+.menu-items {
   background-image: url("./images/Reservations/Background.png");
   display: flex;
   justify-content: center;
@@ -333,17 +345,14 @@ li:hover {
   padding: 15px;
 }
 
-
-
 /* ----------- media query section------*/
 @media only screen and (min-width: 540px) {
-
   .blend-container {
     display: flex;
     margin-top: 20px;
   }
 
-  .column{
+  .column {
     flex: 50%;
   }
 
@@ -354,7 +363,7 @@ li:hover {
     grid-template-rows: 50px 2fr 1fr 50px;
   }
 
-  .greenbox{
+  .greenbox {
     background-color: var(--colour-sage);
     grid-column: 1/-1;
     grid-row: 1/4;

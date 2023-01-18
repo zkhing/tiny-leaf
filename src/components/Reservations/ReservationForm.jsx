@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import logo from '../../images/Ellipse 4.svg'
+import logo from '../../images/Ellipse 4.png'
 
 function ReservationForm() {
   const [date, setDate] = useState("");
@@ -16,10 +16,10 @@ function ReservationForm() {
   return (
     <>
       <div>
-        <img src={logo} alt='logo'/>
+        <img className='logo-img' src={logo} alt='logo'/>
       </div>
 
-      <div>
+      <div className='form-title'>
         <h3> Reserve a table </h3>
         <p>
           We take bookings for groups up to 6. We get busy on weekends so best
@@ -75,7 +75,7 @@ function ReservationForm() {
             By requesting this booking, I am accepting Tiny Leaf's Terms and
             Conditions.
           </label>
-          <button className="submit-btn" type="submit">
+          <button className="btn-submit" type="submit">
             Reserve
           </button>
         </form>
