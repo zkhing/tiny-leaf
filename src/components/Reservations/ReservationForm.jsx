@@ -1,5 +1,7 @@
 import React,{ useState } from 'react'
-import logo from '../../images/Ellipse 4.png'
+import logo from "../../images/Reservations/Ellipse 4.png";
+import logo2 from "../../images/Reservations/Logo.png";
+
 
 function ReservationForm() {
   const [date, setDate] = useState("");
@@ -16,10 +18,10 @@ function ReservationForm() {
   return (
     <>
       <div>
-        <img className='logo-img' src={logo} alt='logo'/>
+        <img className="logo-img" src={logo} alt="logo" />
       </div>
 
-      <div className='form-title'>
+      <div className="form-title">
         <h3> Reserve a table </h3>
         <p>
           We take bookings for groups up to 6. We get busy on weekends so best
@@ -64,21 +66,26 @@ function ReservationForm() {
             value={contact}
             onChange={(e) => setContact(e.target.value)}
           />
-          <label className="label6">Comment / requests</label>
+          <label className="label6">Comments/requests</label>
           <textarea
             className="textarea"
             value={textarea}
             onChange={(e) => setTextarea(e.target.value)}
           />
-          <input className="checkbox" type="checkbox" value="tandc" />
-          <label className="label7">
-            By requesting this booking, I am accepting Tiny Leaf's Terms and
-            Conditions.
-          </label>
-          <button className="btn-submit" type="submit">
-            Reserve
-          </button>
         </form>
+      </div>
+
+      <div className="checkbox">
+        <input type="checkbox" value="tandc" />
+        <label>
+          By requesting this booking, I am accepting Tiny Leaf's Terms and
+          Conditions.
+        </label>
+        <button className="btn-submit">Reserve</button>
+      </div>
+
+      <div>
+        <img className="logo-img2" src={logo2} alt="logo" />
       </div>
     </>
   );

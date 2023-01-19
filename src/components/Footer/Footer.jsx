@@ -13,18 +13,26 @@ function Footer() {
       <div className="footer-info">
         <div className="footer-text">
           <h4>Opening hours</h4>
-          <p>Mon - Sat 11am - 12pm 
-            Sun 11am - 11pm</p>
+          <p>
+            Mon-Sat 11am-12pm <br></br>
+            Sun 11am - 11pm
+          </p>
         </div>
 
         <div className="footer-text">
           <h4>Address</h4>
-          <p>24 Brew Lane BR3 WL, CupTown</p>
+          <p>
+            24 Brew Lane <br></br>
+            BR3 WL, CupTown
+          </p>
         </div>
 
         <div className="footer-text">
           <h4>Contact</h4>
-          <p>+44 12345 67890 hello@yellowmountain.com</p>
+          <p>
+            +44 12345 67890 <br></br>
+            hello@yellowmountain.com
+          </p>
         </div>
       </div>
 
