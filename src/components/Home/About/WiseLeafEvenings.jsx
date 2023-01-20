@@ -1,13 +1,12 @@
 import React from "react";
-import img1 from "../../../images/Home/Wiseleaf1.png";
-import img2 from "../../../images/Home/Wiseleaf2.png";
+import img1 from "../../../images/Home/teapot.png";
+import img2 from "../../../images/Home/flowers.png";
 
 function WiseLeafEvenings() {
   return (
     <>
       <section className="wiseleaf-container">
 
-        <div className="green-box" ></div>
         <div className="wiseleaf-img1">
           <img className="teapot-img" src={img1} alt="teapot" />
         </div>
@@ -24,6 +23,7 @@ function WiseLeafEvenings() {
         <div className="wiseleaf-img2">
           <img className="flowers-img" src={img2} alt="flowers" />
         </div>
+
       </section>
     </>
   );
