@@ -76,15 +76,19 @@ function ReservationForm() {
       </div>
 
       <div className="checkbox">
-        <input type="checkbox" value="tandc" />
-        <label>
-          By requesting this booking, I am accepting Tiny Leaf's Terms and
-          Conditions.
-        </label>
-        <button className="btn-submit">Reserve</button>
+        <div className='box'>
+          <input type="checkbox" value="tandc" />
+          <label>
+            By requesting this booking, I am accepting Tiny Leaf's Terms and
+            Conditions.
+          </label>
+        </div>
+        <div>
+          <button className="btn-submit">Reserve</button>
+        </div>
       </div>
 
-      <div>
+      <div className="img-div">
         <img className="logo-img2" src={logo2} alt="logo" />
       </div>
     </>
