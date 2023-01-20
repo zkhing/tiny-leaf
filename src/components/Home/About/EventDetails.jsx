@@ -1,13 +1,13 @@
 import React from "react";
 import img1 from "../../../images/Home/Wiseleaf1.png";
 import img2 from "../../../images/Home/Wiseleaf2.png";
+import "./EventDetails.css"
 
-function WiseLeafEvenings() {
+function EventDetails() {
   return (
     <>
       <section className="wiseleaf-container">
 
-        <div className="green-box" ></div>
         <div className="wiseleaf-img1">
           <img className="teapot-img" src={img1} alt="teapot" />
         </div>
@@ -29,4 +29,4 @@ function WiseLeafEvenings() {
   );
 }
 
-export default WiseLeafEvenings;
+export default EventDetails;

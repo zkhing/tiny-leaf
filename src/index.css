@@ -108,18 +108,6 @@ li:hover {
   font-size: 61px;
 }
 
-/* wise-leaf section starts here*/
-.teapot-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.wiseleaf-info {
-  background-color: var(--colour-sage);
-  padding: 20px;
-  margin-bottom: 20px;
-}
 
 /* reservation section starts here */
 .home-reservation {
@@ -354,33 +342,6 @@ label {
     flex: 50%;
   }
 
-  /* ----------wiseleaf grid for tablet------ */
-  .wiseleaf-container {
-    display: grid;
-    grid-template-columns: 50px 5fr 70px 6fr 50px;
-    grid-template-rows: 50px 2fr 1fr 50px;
-  }
-
-  .green-box {
-    background-color: var(--colour-sage);
-    grid-column: 2/5;
-    grid-row: 1/4;
-  }
-
-  .wiseleaf-info {
-    grid-column: 4/5;
-    grid-row: 1/3;
-  }
-
-  .wiseleaf-img1 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .wiseleaf-img2 {
-    grid-column: 4/5;
-    grid-row: 3/5;
-  }
 
   /* ..........reservation-form for tablet..... */
   .form-container {
@@ -455,34 +416,6 @@ label {
 
 /* ----------- media query for desktop------*/
 @media only screen and (min-width: 769px) {
-  .wiseleaf-container {
-    /* border: 2px solid #daa520; */
-    display: grid;
-    grid-template-columns: 60px 5fr 80px 6fr 60px;
-    grid-template-rows: 50px 1fr 1fr 50px;
-  }
-
-  .green-box {
-    background-color: var(--colour-sage);
-    grid-column: 2/5;
-    grid-row: 1/4;
-  }
-
-  .wiseleaf-info {
-    grid-column: 4/5;
-    grid-row: 2/3;
-  }
-
-  .wiseleaf-img1 {
-    grid-column: 1/3;
-    grid-row: 2/4;
-  }
-
-  .wiseleaf-img2 {
-    grid-column: 4/6;
-    grid-row: 3/5;
-  }
-
  .logo-img2{
     border: 2px solid #daa520;
     position: relative;

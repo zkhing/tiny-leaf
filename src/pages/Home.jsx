@@ -3,14 +3,14 @@ import Gallery from "../components/Home/Gallery/Gallery";
 import HomeHero from "../components/Home/Hero/HomeHero";
 import HomeReservation from "../components/Home/Reservation/HomeReservation";
 import Ourblends from "../components/Home/About/Ourblends";
-import WiseLeafEvenings from "../components/Home/About/WiseLeafEvenings";
+import EventDetails from "../components/Home/About/EventDetails";
 
 function Home() {
   return (
     <div>
       <HomeHero />
       <Ourblends />
-      <WiseLeafEvenings />
+      <EventDetails />
       <HomeReservation />
       <Gallery />
     </div>
