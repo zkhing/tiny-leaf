@@ -15,7 +15,7 @@ price:"6"}]
 
   return (
     <div className='special-menu-container'>
-        <div className='special-menu-header'>Special this week ...</div>
+        <h3 className='special-menu-header'>Special this week ...</h3>
         {items.map(item => <SpecialMenuItem name={item.name} info={item.info} price={item.price}/>)}
     </div>
   )
