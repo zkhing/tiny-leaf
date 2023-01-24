@@ -25,11 +25,13 @@ price:"5.50"}
 ];
 
   return (
-    <div className='tea-menu-container'>
-        <div className='tea-menu-header'>Loose leaf teas</div>
-        {items.map(item => <TeaMenuItem name={item.name} info={item.info} price={item.price}/>)}
+    <div className="tea-menu-container">
+      <h2 className="tea-menu-header">Loose leaf teas</h2>
+      {items.map((item) => (
+          <TeaMenuItem name={item.name} info={item.info} price={item.price} />
+      ))}
     </div>
-  )
+  );
 }
 
 export default TeaMenu

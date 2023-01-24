@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Menu from "../../pages/Menu";
 import logo from "../../images/Reservations/Ellipse 4.png";
 import logo2 from "../../images/Reservations/Logo.png";
 
@@ -85,7 +87,9 @@ function ReservationForm() {
               </label>
             </div>
             <div className="button-submit">
-              <button className="btn-submit">Reserve</button>
+              <Link to="/menu" element={<Menu />}>
+                <button className="btn-submit">Reserve</button>
+              </Link>
             </div>
           </div>
         </div>

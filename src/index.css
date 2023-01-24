@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
@@ -12,6 +15,10 @@ h2,
 h3,
 h4 {
   font-family: "Cormorant", serif;
+}
+
+h2{
+  font-size: 30px;
 }
 
 p {
@@ -157,14 +164,20 @@ li:hover {
 
 .text {
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .reservation-btn {
   color: var(--colour-sage);
-  padding: 15px;
-  font-size: 21px;
+  padding: 13px 25px;
+  font-size: 14px;
 }
+
+/* ---------gallery section-----  */
+.gallery-container{
+  text-align: center;
+}
+
 
 /* -------------------------- */
 /* Menu page starts here */
@@ -209,15 +222,16 @@ li:hover {
   display: grid;
   grid-template-columns: 5fr 1fr;
   grid-gap: 10px;
-  margin: 5em;
-  padding: 4em;
+  margin: 3em 5em;
+  padding: 2em;
   border: 2px solid var(--colour-biscuit);
 }
 
 .special-menu-header {
   grid-column: 1 / -1;
   color: var(--colour-sage);
-  background-color: aliceblue;
+  padding: 0%;
+  margin: 0%;
   font-size: 35px;
 }
 
@@ -274,7 +288,6 @@ li:hover {
     "ta ta";
   grid-gap: 5px;
   margin: 2em;
-  /* max-width: 500px; */
 }
 
 .label1 {
@@ -381,11 +394,9 @@ input {
   padding: 15px;
 }
 
-.img2-div{
- display:none;
+.img2-div {
+  display: none;
 }
-
-
 
 /* ----------Media query section starts here-------- */
 /* ----------- media query for tablet------*/

@@ -22,7 +22,7 @@ const ImageSlider = ({images}) => {
        <Slider {...settings}>
          {images.map((item) => (
            <div key={item.id}>
-               <img className="gallery" src={item.src} alt={item.alt} />
+              <img src={item.src} alt={item.alt} />
            </div>
          ))}
         </Slider>

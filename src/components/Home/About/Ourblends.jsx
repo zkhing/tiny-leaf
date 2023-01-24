@@ -5,7 +5,7 @@ function Ourblends() {
     <>
       <div className="blend-container">
         <div className="column">
-          <h3>Our Blends</h3>
+          <h2>Our Blends</h2>
           <p>
             We make our very own Tiny Leaf blends right here in the tea house,
             offering new flavours according to the season. We source all our
