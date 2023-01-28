@@ -1,11 +1,8 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-  min-width: 370px;
+  min-width: 300px;
   margin: 0;
   padding: 0;
 }
@@ -17,7 +14,7 @@ h4 {
   font-family: "Cormorant", serif;
 }
 
-h2{
+h2 {
   font-size: 30px;
 }
 
@@ -27,7 +24,7 @@ p {
 }
 
 /* header section and nav bar start here  */
-.navbar-container {
+.navbar{
   background-color: var(--colour-sage);
   color: var(--colour-white);
   display: flex;
@@ -40,10 +37,26 @@ p {
   padding-left: 20px;
 }
 
+
+
+/* .nav-elements {
+  display: none;
+  display: flex;
+  flex-flow: column nowrap;
+  list-style-type: none;
+  background-color: var(--colour-sage);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  width: 200px;
+  padding-top: 3.5rem; 
+} */
+
 ul {
   display: flex;
-  list-style-type: none;
-  padding: 20px;
+  /* flex-flow: nowrap; */
+  list-style-type: none; 
 }
 
 li {
@@ -58,6 +71,10 @@ li {
 li:hover {
   background-color: var(--colour-biscuit);
 }
+
+/* ----------hamburger-------  */
+
+
 
 /* footer section starts here */
 .footer-container {
@@ -106,24 +123,35 @@ li:hover {
 
 /* about section starts here  */
 .blend-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
 }
 
-.column {
-  margin-top: 20px;
+.item {
+  flex-basis: 100%;
+  /* border: 1px solid black; */
   padding: 20px;
 }
 
 .blend-img {
   max-width: 100%;
   height: auto;
+  text-align: center;
+}
+
+.line{
+  background-color: var(--colour-biscuit);
+  width: 30%;
+  height: 3px;
+  margin-left: 20px;
 }
 
 .hand-picked-txt {
   color: var(--colour-biscuit);
   font-family: "Cormorant", serif;
   font-size: 61px;
-  margin: 0px;
+  margin: 20px;
 }
 
 /* wise-leaf section starts here*/
@@ -131,6 +159,7 @@ li:hover {
 .flowers-img {
   width: 100%;
   height: auto;
+  /* background-size: cover; */
   object-fit: cover;
   margin-bottom: 30px;
 }
@@ -150,7 +179,8 @@ li:hover {
   align-items: center;
   margin-top: 30px;
   min-height: 500px;
-  background-size: cover;
+  object-fit: cover;
+  /* background-size: cover; */
 }
 
 .caption {
@@ -174,10 +204,9 @@ li:hover {
 }
 
 /* ---------gallery section-----  */
-.gallery-container{
+.gallery-container {
   text-align: center;
 }
-
 
 /* -------------------------- */
 /* Menu page starts here */
@@ -220,7 +249,7 @@ li:hover {
 /* special menu starts here  */
 .special-menu-container {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-gap: 10px;
   margin: 3em 5em;
   padding: 2em;
@@ -274,7 +303,11 @@ li:hover {
 
 /* reservation form starts here  */
 .form-container {
+  /* width: 100%;
+  height: auto; */
   display: grid;
+  grid-template-columns: repeat(2,100px);
+  grid-auto-rows: repeat(10, 50px);
   grid-template-areas:
     "l1 l2"
     "i1 i2"
@@ -286,8 +319,9 @@ li:hover {
     "i5 i5"
     "l6 l6"
     "ta ta";
-  grid-gap: 5px;
+  grid-gap: 10px;
   margin: 2em;
+  min-width: 370px;
 }
 
 .label1 {
@@ -372,11 +406,11 @@ input {
   padding: 10px;
 }
 
-.main-div {
+/* .main-div {
   width: 100%;
   height: auto;
   object-fit: cover;
-}
+} */
 
 /* reservation menu here  */
 .menu-items {
@@ -400,27 +434,32 @@ input {
 
 /* ----------Media query section starts here-------- */
 /* ----------- media query for tablet------*/
-@media only screen and (min-width: 380px) {
-  .blend-container {
-    display: flex;
-  }
+@media only screen and (min-width: 400px) {
 
-  .column {
-    flex: 50%;
-  }
+  /* ------about section----- */
+  .blend-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+ }
+
 
   /* ----------wiseleaf grid for tablet------ */
   .wiseleaf-container {
     background-color: var(--colour-sage);
     display: grid;
-    grid-template-columns: 50px 1fr 70px 250px 50px;
-    grid-template-rows: 50px 1fr 70px 50px;
+    grid-template-columns: 40px 1fr 50px 2fr 40px;
+    grid-template-rows: 40px 2fr 50px 40px;
     margin-bottom: 5em;
   }
 
   .wiseleaf-img1 {
     grid-column: 2/3;
     grid-row: 2/4;
+    /* width: 100%;
+    height: auto;
+    object-fit: cover; */
+    /* background-image: cover; */
   }
 
   .wiseleaf-info {
@@ -437,6 +476,7 @@ input {
 
   .form-container {
     display: grid;
+    grid-template-columns: repeat(2,80px);
     grid-template-areas:
       "l1 l1 l2 l3"
       "i1 i1 i2 i3"
@@ -446,7 +486,6 @@ input {
       "ta ta ta ta";
     grid-gap: 5px;
     margin: 2em;
-    max-width: 500px;
   }
 
   .label1 {
@@ -521,7 +560,7 @@ input {
     background-color: var(--colour-white);
     display: grid;
     grid-template-columns: 60px 5fr 80px 6fr 60px;
-    grid-template-rows: 50px 250px 100px 50px;
+    grid-template-rows: 50px 300px 120px 80px;
     margin-bottom: 12em;
   }
 

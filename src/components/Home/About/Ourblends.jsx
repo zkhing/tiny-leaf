@@ -4,7 +4,7 @@ function Ourblends() {
   return (
     <>
       <div className="blend-container">
-        <div className="column">
+        <div className="item">
           <h2>Our Blends</h2>
           <p>
             We make our very own Tiny Leaf blends right here in the tea house,
@@ -14,12 +14,13 @@ function Ourblends() {
           </p>
         </div>
 
-        <div className="column">
+        <div className="item">
           <img className="blend-img" src={blends} alt="Our blends" />
         </div>
       </div>
 
-      <div>
+      <div className="item">
+        <div className='line'></div>
         <h4 className="hand-picked-txt">Hand-picked and sustainable</h4>
       </div>
     </>

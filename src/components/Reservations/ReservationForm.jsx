@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Menu from "../../pages/Menu";
 import logo from "../../images/Reservations/Ellipse 4.png";
 import logo2 from "../../images/Reservations/Logo.png";
 
@@ -37,17 +35,24 @@ function ReservationForm() {
               <label className="label1">Date</label>
               <input
                 className="input1"
-                type="number"
+                type="date"
                 value={date}
+                min="2023-01-01"
+                max="2023-12-31"
                 onChange={(e) => setDate(e.target.value)}
               />
+
               <label className="label2">Time</label>
               <input
                 className="input2"
-                type="number"
+                type="time"
                 value={time}
+                min="17:00"
+                max="23:00"
+                required
                 onChange={(e) => setTime(e.target.value)}
               />
+
               <label className="label3">Group size</label>
               <input
                 className="input3"
@@ -55,18 +60,27 @@ function ReservationForm() {
                 value={groupSize}
                 onChange={(e) => setGroupSize(e.target.value)}
               />
+
               <label className="label4">Name</label>
               <input
                 className="input4"
                 type="text"
                 value={name}
+                required
+                minlength="4"
+                maxlength="20"
+                size="20"
                 onChange={(e) => setName(e.target.value)}
               />
+
               <label className="label5">Contact number</label>
               <input
                 className="input5"
-                type="number"
+                type="tel"
                 value={contact}
+                placeholder="123-45-6789"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                required
                 onChange={(e) => setContact(e.target.value)}
               />
               <label className="label6">Comments/requests</label>
@@ -87,9 +101,7 @@ function ReservationForm() {
               </label>
             </div>
             <div className="button-submit">
-              <Link to="/menu" element={<Menu />}>
-                <button className="btn-submit">Reserve</button>
-              </Link>
+               <button className="btn-submit">Reserve</button>
             </div>
           </div>
         </div>

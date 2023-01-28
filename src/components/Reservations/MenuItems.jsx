@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+import Menu from "../../pages/Menu";
 
 
 function MenuItems() {
@@ -10,7 +12,10 @@ function MenuItems() {
           We make our blends with love and care, so you can taste aromas from
           across the globe right here in our tea house
         </p>
-        <button className="menu-btn">See what's on the menu</button>
+
+        <Link to="/menu" element={<Menu />}>
+          <button className="menu-btn">See what's on the menu</button>
+        </Link>
       </div>
     </div>
   );

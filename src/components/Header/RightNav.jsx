@@ -1,18 +1,10 @@
-import React from "react";
-
+import React from 'react'
 import { NavLink } from "react-router-dom";
-import logo from '../../images/Ellipse 4.svg';
 
-function Navbar() {
+function RightNav() {
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <img src={logo} alt="Logo" />
-        <h2>Tiny Leaf Tea House</h2>
-      </div>
-
-      <div>
-        <ul className="nav-elements">
+      
+        <ul>
           <li>
             <NavLink className="nav-link" to="/">
               Home
@@ -29,9 +21,9 @@ function Navbar() {
             </NavLink>
           </li>
         </ul>
-      </div>
-    </nav>
+      
+    
   );
 }
 
-export default Navbar;
+export default RightNav

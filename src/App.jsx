@@ -1,14 +1,12 @@
 import React from "react";
 import "./App.css";
 import "./styles/variables.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Header/Navbar";
 import Footer from "./components/Footer/Footer";
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Reservation from "./pages/Reservation";
-
-
 
 function App() {
   return (
