@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/Home/Hero.png");
+  background-image: url("../images/Home/Hero.png");
   font-family: "Cormorant", serif;
   min-height: 500px;
   background-size: cover;
@@ -17,7 +17,7 @@
   font-size: 88px;
 }
 
-/* about section starts here  */
+/* about section*/
 .blend-container {
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
   font-size: 61px;
 }
 
-/* wise-leaf section starts here*/
+/* wise-leaf section */
 .teapot-img,
 .flowers-img {
   width: 100%;
@@ -62,9 +62,9 @@
   margin: 20px 0px;
 }
 
-/* reservation section starts here */
+/* reservation section */
 .home-reservation {
-  background-image: url("./images/Home/Background.png");
+  background-image: url("../images/Home/Background.png");
   display: flex;
   justify-content: center;
   color: var(--colour-white);
@@ -94,7 +94,7 @@
   font-size: 14px;
 }
 
-/* ---------gallery section-----  */
+/* gallery section */
 .gallery-container > h2 {
   margin-left: 20px;
 }

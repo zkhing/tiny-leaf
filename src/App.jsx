@@ -1,5 +1,10 @@
 import React from "react";
-import "./App.css";
+import "./styles/App.css";
+import "./styles/Home.css";
+import "./styles/Menu.css";
+import "./styles/Reservation.css";
+import "./styles/Tablet-media.css";
+import "./styles/Desktop-media.css";
 import "./styles/variables.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Header/Navbar";
@@ -24,7 +29,6 @@ function App() {
           </Routes>
         </main>
 
-        
         <Footer />
       </div>
     </Router>

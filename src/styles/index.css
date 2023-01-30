@@ -23,7 +23,7 @@ p {
   font-size: 14px;
 }
 
-/* header section and nav bar start here  */
+/* header section and nav bar */
 .navbar{
   background-color: var(--colour-sage);
   color: var(--colour-white);
@@ -76,12 +76,12 @@ li:hover {
 
 
 
-/* footer section starts here */
+/* footer section */
 .footer-container {
-  display: flex;
-  flex-direction: column;
   background-color: var(--colour-sage);
   color: var(--colour-white);
+  display: flex;
+  flex-direction: column;
   margin-top: 50px;
   padding: 20px;
 }
@@ -103,14 +103,16 @@ li:hover {
   padding: 20px;
 }
 
+
+
 /* ---------------------------  */
 /* Home page starts here  */
-.home-hero {
+/* .home-hero {
+  background-image: url("./images/Home/Hero.png");
+  font-family: "Cormorant", serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/Home/Hero.png");
-  font-family: "Cormorant", serif;
   min-height: 500px;
   background-size: cover;
 }
@@ -121,8 +123,8 @@ li:hover {
   font-size: 88px;
 }
 
-/* about section starts here  */
-.blend-container {
+/* about section stextarearts here  */
+/* .blend-container {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -150,10 +152,10 @@ li:hover {
   color: var(--colour-biscuit);
   font-family: "Cormorant", serif;
   font-size: 61px;
-}
+} */
 
 /* wise-leaf section starts here*/
-.teapot-img,
+/* .teapot-img,
 .flowers-img {
   width: 100%;
   height: 100%;
@@ -164,14 +166,14 @@ li:hover {
   background-color: var(--colour-sage);
   padding: 3em 5em;
   margin: 20px 0px;
-}
+} */
 
 /* reservation section starts here */
-.home-reservation {
+/* .home-reservation {
   background-image: url("./images/Home/Background.png");
+  color: var(--colour-white);
   display: flex;
   justify-content: center;
-  color: var(--colour-white);
   align-items: center;
   margin-top: 30px;
   min-height: 500px;
@@ -199,25 +201,28 @@ li:hover {
 }
 
 /* ---------gallery section-----  */
-.gallery-container > h2 {
+/* .gallery-container > h2 {
   margin-left: 20px;
-}
+} */ 
+
+
+
 
 /* -------------------------- */
 /* Menu page starts here */
 /* hero section  */
-.menu-hero {
+/* .menu-hero {
+  background-image: url("./images/Menu/Hero.png");
+  font-family: "Cormorant", serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/Menu/Hero.png");
-  font-family: "Cormorant", serif;
   min-height: 500px;
   background-size: cover;
-}
+} */
 
 /* main menu starts here  */
-.tea-menu-container {
+/* .tea-menu-container {
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-gap: 10px;
@@ -239,10 +244,10 @@ li:hover {
 
 .info {
   padding-left: 50px;
-}
+} */
 
 /* special menu starts here  */
-.special-menu-container {
+/* .special-menu-container {
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-gap: 10px;
@@ -263,10 +268,10 @@ li:hover {
   grid-column: 1 / -1;
   color: var(--colour-sage);
   font-size: 20px;
-}
+} */
 
 /* reserve a table */
-.menu-reservation {
+/* .menu-reservation {
   background-image: url("./images/Menu/Background.png");
   color: var(--colour-white);
   display: flex;
@@ -274,11 +279,14 @@ li:hover {
   align-items: center;
   min-height: 500px;
   background-size: cover;
-}
+} */ 
+
+
+
 
 /* ---------------------- */
 /* Reservation page starts here  */
-.reservation-hero {
+/* .reservation-hero {
   background-image: url("./images/Reservations/Hero.png");
   font-family: "Cormorant", serif;
   display: flex;
@@ -294,75 +302,73 @@ li:hover {
 
 .form-title {
   margin: 20px 0 0 20px;
-}
+} */
 
 /* reservation form starts here  */
-.form-container {
+/* .form-container {
   display: grid;
-  grid-template-columns: repeat(2,100px);
-  grid-auto-rows: repeat(10, 50px);
   grid-template-areas:
-    "l1 l2"
-    "i1 i2"
-    "l3 ."
-    "i3 ."
-    "l4 l4"
-    "i4 i4"
-    "l5 l5"
-    "i5 i5"
-    "l6 l6"
-    "ta ta";
+    "label1 label2"
+    "input1 input2"
+    "label3 ."
+    "input3 ."
+    "label4 label4"
+    "input4 input4"
+    "label5 label5"
+    "input5 input5"
+    "label6 label6"
+    "textarea textarea";
   grid-gap: 10px;
   margin: 2em;
   min-width: 370px;
 }
 
 .label1 {
-  grid-area: l1;
+  grid-area: label1;
 }
 
 .input1 {
-  grid-area: i1;
+  grid-area: input1;
 }
 
 .label2 {
-  grid-area: l2;
+  grid-area: label2;
 }
 
 .input2 {
-  grid-area: i2;
+  grid-area: input2;
 }
 
 .label3 {
-  grid-area: l3;
+  grid-area: label3;
 }
 
 .input3 {
-  grid-area: i3;
+  grid-area: input3;
 }
 
 .label4 {
-  grid-area: l4;
+  grid-area: label4;
 }
 
 .input4 {
-  grid-area: i4;
+  grid-area: input4;
 }
 
 .label5 {
-  grid-area: l5;
+  grid-area: label5;
 }
 
 .input5 {
-  grid-area: i5;
+  grid-area: input5;
 }
 
 .label6 {
-  grid-area: l6;
+  grid-area: label6;
 }
 
 .textarea {
-  grid-area: ta;
+  grid-area: textarea;
   padding: 50px;
   border: 1px solid var(--colour-sage);
   border-radius: 5px;
@@ -378,7 +384,7 @@ li:hover {
 }
 
 .button-submit {
-  text-align: center;
+  margin-left: 20%;
 }
 
 .btn-submit {
@@ -398,10 +404,10 @@ input {
   border-radius: 5px;
   padding: 10px;
 }
-
+ */
 
 /* reservation menu here  */
-.menu-items {
+/* .menu-items {
   background-image: url("./images/Reservations/Background.png");
   display: flex;
   justify-content: center;
@@ -418,22 +424,23 @@ input {
 
 .img2-div {
   display: none;
-}
+} */
+
+
 
 /* ----------Media query section starts here-------- */
 /* ----------- media query for tablet------*/
-@media only screen and (min-width: 768px) {
-
-  /* ------about section----- */
-  .blend-container {
+/* @media only screen and (min-width: 768px) { */
+/* ------about section----- */
+  /* .blend-container {
       display: flex;
       flex-direction: row;
       margin-top: 20px;
- }
+ } */
 
 
   /* ----------wiseleaf grid for tablet------ */
-  .wiseleaf-container {
+  /* .wiseleaf-container {
     display: grid;
     grid-template-columns: 40px 1.5fr 70px 2fr 40px;
     grid-template-rows: 40px 1.5fr 120px 40px 40px;
@@ -459,93 +466,97 @@ input {
   .wiseleaf-img2 {
     grid-column: 4/5;
     grid-row: 3/-1;
-  }
+  } */
 
   /* ..........reservation-form for tablet..... */
 
-  .form-container {
+  /* .form-container {
     display: grid;
     grid-template-columns: repeat(2,80px);
     grid-template-areas:
-      "l1 l1 l2 l3"
-      "i1 i1 i2 i3"
-      "l4 l4 l5 l5"
-      "i4 i4 i5 i5"
-      "l6 . . ."
-      "ta ta ta ta";
+      "label1 label1 label2 label3"
+      "input1 input1 input2 input3"
+      "label4 label4 label5 label5"
+      "input4 input4 input5 input5"
+      "label6 . . ."
+      "textarea textarea textarea textarea";
     grid-gap: 5px;
-    margin: 2em;
+    margin-left: 50px;
+    max-width: 500px;
   }
 
   .label1 {
-    grid-area: l1;
+    grid-area: label1;
   }
 
   .input1 {
-    grid-area: i1;
+    grid-area: input1;
   }
 
   .label2 {
-    grid-area: l2;
+    grid-area: label2;
   }
 
   .input2 {
-    grid-area: i2;
+    grid-area: input2;
   }
 
   .label3 {
-    grid-area: l3;
+    grid-area: label3;
   }
 
   .input3 {
-    grid-area: i3;
+    grid-area: input3;
   }
 
   .label4 {
-    grid-area: l4;
+    grid-area: label4;
   }
 
   .input4 {
-    grid-area: i4;
+    grid-area: input4;
   }
 
   .label5 {
-    grid-area: l5;
+    grid-area: label5;
   }
 
   .input5 {
-    grid-area: i5;
+    grid-area: input5;
   }
 
   .label6 {
-    grid-area: l6;
+    grid-area: label6;
   }
 
   .textarea {
-    grid-area: ta;
+    grid-area: textarea;
   }
 
   .main-div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .img2-div {
     display: flex;
     align-self: flex-end;
-  }
+    margin: -10rem 0 2em 0;
+  } */
 
   /* -------Footer--------- */
-  .footer-info {
+  /* .footer-info {
     display: flex;
     justify-content: space-around;
   }
-}
+} */
 
+
+
+/* ----------------------------------- */
 /* ----------- media query for desktop------*/
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
   .wiseleaf-container {
-    /* border: 2px solid #daa520; */
     background-color: var(--colour-white);
     display: grid;
     grid-template-columns: 60px 5fr 80px 6fr 60px;
@@ -572,10 +583,20 @@ input {
   .wiseleaf-img2 {
     grid-column: 4/6;
     grid-row: 3/5;
+  } */
+
+  
+  /* ..........reservation-form for desktop..... */
+  /* .main-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -10em;
   }
 
-  /* ........form.........  */
   .img2-div {
+    display: flex;
     align-self: center;
+    margin: -10em;
   }
-}
+} */

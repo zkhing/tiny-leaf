@@ -1,5 +1,7 @@
 import blends from '../../../images/Home/Blend.png'
 
+
+
 function Ourblends() {
   return (
     <>
