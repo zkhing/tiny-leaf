@@ -5,11 +5,11 @@ import MenuItems from "../components/Reservations/MenuItems";
 
 function Reservation() {
   return (
-    <div>
+    <>
       <ReservationHero />
       <ReservationForm />
       <MenuItems />
-    </div>
+    </>
   );
 }
 

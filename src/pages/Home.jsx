@@ -7,13 +7,13 @@ import WiseLeafEvenings from "../components/Home/About/WiseLeafEvenings";
 
 function Home() {
   return (
-    <div>
+    <>
       <HomeHero />
       <Ourblends />
       <WiseLeafEvenings />
       <HomeReservation />
       <Gallery />
-    </div>
+    </>
   )
 }
 

@@ -6,12 +6,12 @@ import SpecialMenu from "../components/Menu/SpecialMenu";
 
 function Menu() {
   return (
-    <div>
+    <>
       <MenuHero />
       <TeaMenu />
       <SpecialMenu />
       <MenuReservation />
-    </div>
+    </>
   )
 }
 

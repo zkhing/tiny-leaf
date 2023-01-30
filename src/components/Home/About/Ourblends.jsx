@@ -19,7 +19,7 @@ function Ourblends() {
         </div>
       </div>
 
-      <div className="item">
+      <div>
         <div className='line'></div>
         <h4 className="hand-picked-txt">Hand-picked and sustainable</h4>
       </div>

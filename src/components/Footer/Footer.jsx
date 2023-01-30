@@ -4,7 +4,7 @@ import social from '../../images/Social.png';
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <footer className="footer-container">
       <div className="footer-logo">
         <img src={logo} alt="Logo" />
         <h2>Tiny Leaf Tea House</h2>
@@ -39,7 +39,7 @@ function Footer() {
       <div className="social-logo">
         <img src={social} alt="Social Media" />
       </div>
-    </div>
+    </footer>
   );
 }
 
