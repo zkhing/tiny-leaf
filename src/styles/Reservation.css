@@ -20,16 +20,16 @@
 .form-container {
   display: grid;
   grid-template-areas:
-    "label1 label2"
-    "input1 input2"
-    "label3 ."
-    "input3 ."
-    "label4 label4"
-    "input4 input4"
-    "label5 label5"
-    "input5 input5"
-    "label6 label6"
-    "textarea textarea";
+    "label1 label2 ."
+    "input1 input2 ."
+    "label3 . ."
+    "input3 . ."
+    "label4 label4 ."
+    "input4 input4 ."
+    "label5 label5 ."
+    "input5 input5 ."
+    "label6 label6 ."
+    "textarea textarea .";
   grid-gap: 10px;
   margin: 2em;
   min-width: 370px;
@@ -86,6 +86,7 @@
   border-radius: 5px;
 }
 
+
 .checkbox {
   display: flex;
   flex-direction: column;
@@ -93,17 +94,18 @@
 
 .box {
   margin-left: 30px;
+} 
+
+.reserve {
+  text-align: center;
 }
 
-.button-submit {
-  margin-left: 20%;
-}
-
-.btn-submit {
+.btn-reserve {
   background-color: var(--colour-sage);
   color: var(--colour-white);
   margin: 20px 0px 40px 0px;
-  padding: 10px 30px;
+  padding: 10px 40px;
+  font-size: 12px;
   border: 0ch;
 }
 
@@ -131,7 +133,7 @@ input {
 
 .menu-btn {
   color: var(--colour-sage);
-  padding: 15px;
+  padding: 10px 30px;
 }
 
 .img2-div {

@@ -83,6 +83,7 @@ function ReservationForm() {
                 required
                 onChange={(e) => setContact(e.target.value)}
               />
+
               <label className="label6">Comments/requests</label>
               <textarea
                 className="textarea"
@@ -100,8 +101,8 @@ function ReservationForm() {
                 Conditions.
               </label>
             </div>
-            <div className="button-submit">
-               <button className="btn-submit">Reserve</button>
+            <div className="reserve">
+               <button className="btn-reserve">Reserve</button>
             </div>
           </div>
         </div>
