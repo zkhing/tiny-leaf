@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles/App.css";
+import "./components/Header/Header.css";
+import "./components/Footer/Footer.css";
 import "./styles/Home.css";
 import "./styles/Menu.css";
 import "./styles/Reservation.css";

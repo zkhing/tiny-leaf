@@ -20,16 +20,16 @@
 .form-container {
   display: grid;
   grid-template-areas:
-    "label1 label2 ."
-    "input1 input2 ."
-    "label3 . ."
-    "input3 . ."
-    "label4 label4 ."
-    "input4 input4 ."
-    "label5 label5 ."
-    "input5 input5 ."
-    "label6 label6 ."
-    "textarea textarea .";
+    "label1 label2"
+    "input1 input2"
+    "label3 ."
+    "input3 ."
+    "label4 label4"
+    "input4 input4"
+    "label5 label5"
+    "input5 input5"
+    "label6 label6"
+    "textarea textarea";
   grid-gap: 10px;
   margin: 2em;
   min-width: 370px;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
@@ -21,10 +21,10 @@ h2 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-}
+} */
 
 /* header section and nav bar */
-.navbar{
+/* .navbar{
   background-color: var(--colour-sage);
   color: var(--colour-white);
   display: flex;
@@ -35,8 +35,7 @@ p {
 .logo {
   display: flex;
   padding-left: 20px;
-}
-
+} */
 
 
 /* .nav-elements {
@@ -53,9 +52,8 @@ p {
   padding-top: 3.5rem; 
 } */
 
-ul {
+/* ul {
   display: flex;
-  /* flex-flow: nowrap; */
   list-style-type: none; 
 }
 
@@ -70,14 +68,14 @@ li {
 
 li:hover {
   background-color: var(--colour-biscuit);
-}
+} */
 
 /* ----------hamburger-------  */
 
 
 
 /* footer section */
-.footer-container {
+/* .footer-container {
   background-color: var(--colour-sage);
   color: var(--colour-white);
   display: flex;
@@ -101,7 +99,7 @@ li:hover {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
-}
+} */
 
 
 
