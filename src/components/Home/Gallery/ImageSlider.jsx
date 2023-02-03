@@ -13,7 +13,7 @@ const ImageSlider = ({images}) => {
    slidesToScroll: 1,
    lazyLoad: true,
    autoplay: true,
-   autoplaySpeed: 3000,
+   autoplaySpeed: 1000,
   };
 
   return (
