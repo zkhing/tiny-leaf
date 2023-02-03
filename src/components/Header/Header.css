@@ -37,9 +37,9 @@ p {
   padding-left: 20px;
 }
 
-/* .nav-elements {
-  display: none;
-  display: flex;
+.nav-elements {
+  /* display: none; */
+  /* display: flex; */
   flex-flow: column nowrap;
   list-style-type: none;
   background-color: var(--colour-sage);
@@ -49,12 +49,11 @@ p {
   height: 50vh;
   width: 200px;
   padding-top: 3.5rem; 
-} */
-
+}
 
 ul {
   display: flex;
-  list-style-type: none; 
+  text-align: center;
 }
 
 li {
@@ -69,3 +68,23 @@ li {
 li:hover {
   background-color: var(--colour-biscuit);
 } 
+
+/* ---------hamburger menu--------- */
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+}
+
+.hamburger div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+    transform-origin: 1px;
+}
+
+
+
