@@ -5,11 +5,11 @@ export function NavLinks({open}) {
   return (
     <div>
       <ul className="nav-elements">
-        <div
+        {/* <div
           style={{
             transform: open ? "translateX(100%)" : "translateX(0)",
           }}
-        />
+        /> */}
         <li>
           <NavLink className="nav-link" to="/">
             Home

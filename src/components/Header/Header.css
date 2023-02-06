@@ -39,7 +39,7 @@ p {
 
 .nav-elements {
   /* display: none; */
-  /* display: flex; */
+  display: flex;
   flex-flow: column nowrap;
   list-style-type: none;
   background-color: var(--colour-sage);
@@ -54,6 +54,7 @@ p {
 ul {
   display: flex;
   text-align: center;
+  flex-flow: row nowrap;
 }
 
 li {
