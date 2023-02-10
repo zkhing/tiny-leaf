@@ -24,7 +24,7 @@ p {
 }
 
 /* header section and nav bar */
-.navbar{
+/* .navbar {
   background-color: var(--colour-sage);
   color: var(--colour-white);
   display: flex;
@@ -38,17 +38,25 @@ p {
 }
 
 .nav-elements {
-  /* display: none; */
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
   list-style-type: none;
-  background-color: var(--colour-sage);
+  background-color: var(--colour-sage); 
   position: fixed;
   top: 0;
   right: 0;
   height: 50vh;
-  width: 200px;
-  padding-top: 3.5rem; 
+  width: 150px;
+  padding-top: 3.5rem;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.nav-elements.open {
+  opacity: 100%;
+  transform: translateX(0);
 }
 
 ul {
@@ -58,7 +66,7 @@ ul {
 }
 
 li {
-  padding: 10px;
+  padding: 25px;
 }
 
 .nav-link {
@@ -68,24 +76,111 @@ li {
 
 li:hover {
   background-color: var(--colour-biscuit);
-} 
+}  */
 
 /* ---------hamburger menu--------- */
-.hamburger {
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column;
+/* .hamburger {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 20px;
+  justify-content: space-around;
+  flex-flow: column;
+  z-index: 20;
 }
 
 .hamburger div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #fff;
+  transition: all 0.3s ease-out;
+  transform-origin: 1px;
+} */
+
+/* header section and nav bar */
+.navbar {
+  background-color: var(--colour-sage);
+  color: var(--colour-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  padding-left: 20px;
+}
+
+.nav-elements {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style-type: none;
+  background-color: var(--colour-sage);
+}
+
+ul {
+  display: flex;
+  text-align: center;
+  flex-flow: row nowrap;
+}
+
+li {
+  padding: 20px;
+}
+
+.nav-link {
+  color: var(--colour-white);
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: var(--colour-biscuit);
+}
+
+.hamburger {
+  display: none;
+}
+
+
+/* -------Media--------- */
+@media (max-width: 768px) {
+  /* -------Right nav elements------- */
+  .nav-elements {
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 200px;
+    padding-top: 3.5rem;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .nav-elements.open {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+
+
+/* ----hamburger menu-----*/
+  .hamburger {
+    display: flex;
+    padding-right: 20px;
+    width: 2rem;
+    height: 2rem;
+    justify-content: space-around;
+    flex-flow: column;
+    z-index: 20;
+  }
+
+  .hamburger div {
     width: 2rem;
     height: 0.25rem;
     background-color: #fff;
     transition: all 0.3s ease-out;
     transform-origin: 1px;
+  }
 }
-
-
-
