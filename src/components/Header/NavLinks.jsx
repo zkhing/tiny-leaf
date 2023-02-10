@@ -3,10 +3,7 @@ import {NavLink} from "react-router-dom";
 
 export function NavLinks({open}) {
 
-    return <ul className="nav-elements" style={{
-        "opacity": open ? "100%" : "0",
-        "transform": open ? "translateX(0)" : "translateX(100%)"
-    }}>
+    return <ul className={"nav-elements" + (open ? " open" : "")}>
         <li>
             <NavLink className="nav-link" to="/">
                 Home

@@ -2,84 +2,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-  min-width: 300px;
-  margin: 0;
-  padding: 0;
+    min-width: 300px;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Cormorant", serif;
+    font-family: "Cormorant", serif;
 }
 
 h2 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
 }
 
 /* header section and nav bar */
-.navbar{
-  background-color: var(--colour-sage);
-  color: var(--colour-white);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar {
+    background-color: var(--colour-sage);
+    color: var(--colour-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  display: flex;
-  padding-left: 20px;
+    display: flex;
+    padding-left: 20px;
+}
+.nav-elements {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    background-color: var(--colour-sage);
 }
 
-.nav-elements {
-  display: flex;
-  flex-flow: column nowrap;
-  list-style-type: none;
-  background-color: var(--colour-sage);
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 50vh;
-  width: 200px;
-  padding-top: 3.5rem;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+@media (max-width: 768px) {
+    .nav-elements {
+        display: flex;
+        flex-flow: column nowrap;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 50vh;
+        width: 200px;
+        padding-top: 3.5rem;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+    .nav-elements.open {
+        opacity: 100%;
+        transform: translateX(0);
+    }
 }
 
 ul {
-  display: flex;
-  text-align: center;
-  flex-flow: row nowrap;
+    display: flex;
+    text-align: center;
+    flex-flow: row nowrap;
 }
 
 li {
-  padding: 10px;
+    padding: 10px;
 }
 
 .nav-link {
-  color: var(--colour-white);
-  text-decoration: none;
+    color: var(--colour-white);
+    text-decoration: none;
 }
 
 li:hover {
-  background-color: var(--colour-biscuit);
-} 
+    background-color: var(--colour-biscuit);
+}
 
 /* ---------hamburger menu--------- */
 .hamburger {
     width: 2rem;
     height: 2rem;
-    display: flex;
+    display: none;
     justify-content: space-around;
     flex-flow: column;
     z-index: 20;
 }
-
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+}
 .hamburger div {
     width: 2rem;
     height: 0.25rem;
